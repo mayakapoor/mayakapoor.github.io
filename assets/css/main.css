@@ -2432,11 +2432,12 @@ input, select, textarea {
 	.dropotron {
 		list-style: none;
 		padding-left: 0;
-		background: #fff;
+		background: transparent;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
+		outline: none;
 		text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 	}
@@ -3339,3 +3340,53 @@ input, select, textarea {
 			}
 
 	}
+
+	/* Dropdown Button */
+.dropbtn {
+ padding: 16px;
+ font-size: 16px;
+ outline:none;
+ background-color: Transparent;
+ top: 16px;
+ left: 8px;
+ width: 50px;
+ height: 34px;
+ line-height: 34px;
+ border: none;
+ cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+ position: absolute;
+ display: inline-block;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #83d3c9;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #fff;
+ min-width: 120px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
